@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="uni.css">
+    <script src="https://kit.fontawesome.com/bb8769d3b3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="x-icon" href="obrazky/BAU PROFESSIONAL ultra transparent.png">
+    <title>BAU professional/pomocník</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="menu_sk.html"><img src="obrazky/BAU PROFESSIONAL mini ultra se.png" class="logo" alt="" ></a></div>
+            <ul class="links">
+                <li><a href="praca.html">Ponuka prác</a></li>
+                <li><a href="info.html">Informácie pre firmy</a></li>
+                <li><a href="kontakt_sk.html">Kontakty</a></li>
+                <li><a href="#">Požičanie auta</a></li>
+            </ul>
+            <a href="#" class="action_btn">Chcem prácu</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="praca.html">Ponuka prác</a></li>
+            <li><a href="info.html">Informácie pre firmy</a></li>
+            <li><a href="kontakt_sk.html">Kontakty</a></li>
+            <li><a href="#">Požičanie auta</a></li>
+            <li><a href="#" class="action_btn">Chcem prácu</a></li>
+        </div>
+    </header>
+
+    <main>
+        <div class="nadpis">
+            <h2>Pomocník</h2>
+        </div>
+        <section>
+        <div class="dvo">
+            <img src="obrazky/pomocniku.jpg" class="obrp" alt="obrp">
+        </div>
+
+        <div class="podn">
+            <h2>Náplň práce a zodpovednosti</h2>
+        </div>
+        <div class="textp">
+                <p>
+                <span>&#x2022;</span> Vykonávanie širokého spektra pomocných prác.<br>
+                <span>&#x2022;</span> Zabezpečovanie menej kvalifikovaných činností podľa požiadaviek zamestnávateľa.<br>
+                <span>&#x2022;</span> Vykonávanie prevažne manuálnych prác.<br>
+                <span>&#x2022;</span> Dodržiavanie pracovných pokynov nadriadeného pracovníka.<br>
+        </div>
+        <div class="podn">
+            <h2>Máte záujem o prácu?</h2>
+        </div>
+        <div class="hero_btn">
+        <a href="#" class="bottom_btn">Napíšte Nám</a>
+        </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footercontainer">
+            <div class="section1">
+                <h3>Kontaktujte Nás pomocou:</h3>
+                <a href="mailto:info@bauprofessional.eu?subject=Otázka"><p><i class="fa-solid fa-envelope"></i> Mail: info@bau.eu</p></a>
+                <a href="tel:+421 xxx xxx xxx"><p><i class="fa-solid fa-phone"></i> Telefón: +1234567890</p></a>
+            </div>
+            <div class="sectionc">
+                <img src="obrazky/BAU PROFESSIONAL mini ultra se.png" alt="logofooterc">
+            </div>
+            <div class="section2">
+                <h3>BAU PROFESSIONAL <span>s. r. o.</span></h3>
+                <p><i class="fa-solid fa-location-dot"></i> Haanova 46A, 851 04 Bratislava<br> - <span>mestská časť Petržalka</span><br>
+                   IČO: 55 491 839<br>
+                   IČ DPH: SK2122014059</p>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023 Všetky práva vyhradené pre BAU PROFESSIONAL; Designed by: LGD X Devio</p>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
+}
+    </script>
+</body>
+</html>
